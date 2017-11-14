@@ -14,3 +14,56 @@ header {
     }
     border-bottom: 1px solid #FD5723;
 }
+.Register{
+    width: 882px;
+    height: 603px;
+    background: #fff;
+    box-shadow: -1px 1px 60px #e5d4d4;
+    margin: 40px auto;
+    .form-cont{
+        width: 450px;
+        padding: 50px 0;
+        margin: 0 auto;
+        .form-goup{
+            margin-bottom: 15px;
+            &:nth-last-of-type(1){
+                padding-left: 100px;
+            }
+            label{
+                padding-right: 20px;
+                text-align: right;
+                width: 100px;
+                float: left;
+                padding-top: 10px;
+                font-size: 16px;
+                color: #A4A4A4;
+
+                &#gender{
+                    padding-top: 0;
+                }
+            }
+            input{
+                font-size: 16px;
+                color: #ccc;   
+
+            }
+            input#emali,input#password,input#password_t,input#birthday,input#code,input#name{
+                width: 282px;
+                height: 42px;
+                border: 1px solid #CCC;
+            }  
+            
+        }
+        button#submit{
+                width: 300px;
+                height: 40px;
+                background-color: #FE5722;
+                color: #fff;
+                font-size: 18px;
+                margin-left: 80px;                
+        }
+    }
+        
+    
+    
+}
