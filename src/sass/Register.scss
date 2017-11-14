@@ -21,7 +21,7 @@ header {
     box-shadow: -1px 1px 60px #e5d4d4;
     margin: 40px auto;
     .form-cont{
-        width: 450px;
+        width: 528px;
         padding: 50px 0;
         margin: 0 auto;
         .form-goup{
@@ -44,14 +44,25 @@ header {
             }
             input{
                 font-size: 16px;
-                color: #ccc;   
+                color: #a0a0a0;   
 
             }
             input#emali,input#password,input#password_t,input#birthday,input#code,input#name{
                 width: 282px;
                 height: 42px;
                 border: 1px solid #CCC;
+                &.active{
+                    border: 1px solid #FD5723;
+                    
+                }
             }  
+            .error{
+                height: 20px;
+                line-height: 20px;
+                float: right;
+                padding-top: 10px;
+                display:none;
+            }
             
         }
         button#submit{
@@ -60,7 +71,8 @@ header {
                 background-color: #FE5722;
                 color: #fff;
                 font-size: 18px;
-                margin-left: 80px;                
+                margin-left: 80px;  
+                cursor:pointer;              
         }
     }
         

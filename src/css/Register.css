@@ -524,7 +524,7 @@ header p span a {
 }
 
 .Register .form-cont {
-  width: 450px;
+  width: 528px;
   padding: 50px 0;
   margin: 0 auto;
 }
@@ -553,13 +553,25 @@ header p span a {
 
 .Register .form-cont .form-goup input {
   font-size: 16px;
-  color: #ccc;
+  color: #a0a0a0;
 }
 
 .Register .form-cont .form-goup input#emali, .Register .form-cont .form-goup input#password, .Register .form-cont .form-goup input#password_t, .Register .form-cont .form-goup input#birthday, .Register .form-cont .form-goup input#code, .Register .form-cont .form-goup input#name {
   width: 282px;
   height: 42px;
   border: 1px solid #CCC;
+}
+
+.Register .form-cont .form-goup input#emali.active, .Register .form-cont .form-goup input#password.active, .Register .form-cont .form-goup input#password_t.active, .Register .form-cont .form-goup input#birthday.active, .Register .form-cont .form-goup input#code.active, .Register .form-cont .form-goup input#name.active {
+  border: 1px solid #FD5723;
+}
+
+.Register .form-cont .form-goup .error {
+  height: 20px;
+  line-height: 20px;
+  float: right;
+  padding-top: 10px;
+  display: none;
 }
 
 .Register .form-cont button#submit {
@@ -569,4 +581,5 @@ header p span a {
   color: #fff;
   font-size: 18px;
   margin-left: 80px;
+  cursor: pointer;
 }
