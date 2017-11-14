@@ -1,5 +1,16 @@
 @import 'login.scss';
 
-.btn{
+header {
+    p{
+        float: right;
+        margin-top: 45px;
+        font-size: 16px;
+        span{
+            a{
+                color: #FD5723;
+            }
+        }
 
+    }
+    border-bottom: 1px solid #FD5723;
 }

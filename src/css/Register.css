@@ -412,11 +412,10 @@ s, i, em {
 
 header {
   height: 118px;
-  padding-left: 82px;
   padding-top: 35px;
 }
 
-header .logo {
+header .container .logo {
   text-indent: -1000px;
   background: url("../images/logo.gif");
   display: block;
@@ -426,7 +425,7 @@ header .logo {
   margin-right: 15px;
 }
 
-header h2 {
+header .container h2 {
   color: #585858;
   float: left;
   font-size: 24px;
@@ -500,4 +499,18 @@ header h2 {
 
 #footer .container .link {
   display: none;
+}
+
+header {
+  border-bottom: 1px solid #FD5723;
+}
+
+header p {
+  float: right;
+  margin-top: 45px;
+  font-size: 16px;
+}
+
+header p span a {
+  color: #FD5723;
 }

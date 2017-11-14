@@ -2,11 +2,8 @@
 
 header{
     height:118px;
-    padding-left: 82px;
     padding-top: 35px;
-
-   
-
+    .container{
         .logo{
         text-indent:-1000px;
         background: url('../images/logo.gif');
@@ -25,7 +22,7 @@ header{
             padding-left: 15px;
         }
 
-    
+      }
 }
 #login_cont{
     background: #FE3F3F;
