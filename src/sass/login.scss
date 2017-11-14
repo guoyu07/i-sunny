@@ -1,0 +1,97 @@
+@import 'base.scss';
+
+header{
+    height:118px;
+    padding-left: 82px;
+    padding-top: 35px;
+
+   
+
+        .logo{
+        text-indent:-1000px;
+        background: url('../images/logo.gif');
+        display: block;
+        width:200px;
+        height:63px;
+        float: left;
+        margin-right: 15px;
+        }
+        h2{
+            color: #585858;
+            float: left;
+            font-size: 24px;
+            line-height: 63px;
+            border-left: 1px solid #ccc;
+            padding-left: 15px;
+        }
+
+    
+}
+#login_cont{
+    background: #FE3F3F;
+    .container{
+        position:relative;
+
+        .login{
+            width: 358px;
+            height:380px;
+            padding: 28px;
+            background: #fff;
+            position:absolute;
+            right: 68px;
+            top: 30px;
+            .title{
+
+                h3{
+                    font-size: 20px;
+                }
+                span{
+                    a{
+                        color: #268BF3;
+                    }
+                }
+            }
+            .input{
+                input{
+                    border: 1px solid #ccc;
+                    width: 302px;
+                    height:42px;
+                    margin-top: 17px;
+                    color: #999;
+                    padding-left: 12px;
+                    font-size: 14px;
+                }
+            }
+            .check{
+                margin-top: 20px;
+                margin-bottom: 35px;
+                &>span{
+                    margin-left: 188px;
+                }
+            }
+            button{
+                width: 302px;
+                height: 40px;
+                background-color: #FF5500;
+                color: #fff;
+                cursor:pointer;
+                margin-bottom: 20px;
+            }
+            .link{
+                ul{
+                    li{
+                        float: left;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+#footer{
+    background: #fff;
+     .container .link{
+        display:none;
+    }
+}
+
