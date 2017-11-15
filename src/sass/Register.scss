@@ -21,7 +21,7 @@ header {
     box-shadow: -1px 1px 60px #e5d4d4;
     margin: 40px auto;
     .form-cont{
-        width: 528px;
+        width: 650px;
         padding: 50px 0;
         margin: 0 auto;
         .form-goup{
@@ -33,7 +33,7 @@ header {
                 padding-right: 20px;
                 text-align: right;
                 width: 100px;
-                float: left;
+                display: inline-block;
                 padding-top: 10px;
                 font-size: 16px;
                 color: #A4A4A4;
@@ -56,12 +56,31 @@ header {
                     
                 }
             }  
-            .error{
+            input#code{
+                width: 162px;
+            }
+            .nomal{
+                color: #ccc;
                 height: 20px;
                 line-height: 20px;
-                float: right;
                 padding-top: 10px;
-                display:none;
+                display: none;
+            }
+            .error{
+                
+                height: 20px;
+                line-height: 20px;
+                padding-top: 10px;
+                color: #fe5722;
+                i{
+                    padding-right: 5px;
+                }
+            }
+            .ture{
+                height: 20px;
+                line-height: 20px;
+                padding-top: 10px;
+                color: #268bf3;
             }
             
         }

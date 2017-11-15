@@ -524,7 +524,7 @@ header p span a {
 }
 
 .Register .form-cont {
-  width: 528px;
+  width: 650px;
   padding: 50px 0;
   margin: 0 auto;
 }
@@ -541,7 +541,7 @@ header p span a {
   padding-right: 20px;
   text-align: right;
   width: 100px;
-  float: left;
+  display: inline-block;
   padding-top: 10px;
   font-size: 16px;
   color: #A4A4A4;
@@ -566,12 +566,34 @@ header p span a {
   border: 1px solid #FD5723;
 }
 
+.Register .form-cont .form-goup input#code {
+  width: 162px;
+}
+
+.Register .form-cont .form-goup .nomal {
+  color: #ccc;
+  height: 20px;
+  line-height: 20px;
+  padding-top: 10px;
+  display: none;
+}
+
 .Register .form-cont .form-goup .error {
   height: 20px;
   line-height: 20px;
-  float: right;
   padding-top: 10px;
-  display: none;
+  color: #fe5722;
+}
+
+.Register .form-cont .form-goup .error i {
+  padding-right: 5px;
+}
+
+.Register .form-cont .form-goup .ture {
+  height: 20px;
+  line-height: 20px;
+  padding-top: 10px;
+  color: #268bf3;
 }
 
 .Register .form-cont button#submit {
