@@ -2,7 +2,7 @@
 //定义母婴专区
 $arr_muyi = array(
 
-            array('name'=>'限时抢购',"imgurl"=>"images/index_xs_",'detalist'=>'日本花王(Merries)妙而舒纸尿裤 中号M64片(6-11kg) 包邮包税原装进口'),
+            array('name'=>'限时抢购',"imgurl"=>"images/index_xs_",'detalist'=>'日本花王(Merries)妙而舒纸尿裤 中号M64片(6-11kg) 包邮包税原装进口',),
             array('name'=>'每日上新 ',"imgurl"=>"images/index_sx_",'detalist'=>'日本大王(GOO.N) 维E系列 拉拉裤 学步裤训练裤 女 XL38片(12-20kg) 包邮包税'),
             array('name'=>'精挑细选',"imgurl"=>"images/index_pb_",'detalist'=>'日本大王(GOO.N) 维E系列 拉拉裤 学步裤训练裤 女 XL38片(12-20kg) 包邮包税',"category" => array('特福芬 ','喜宝 ','爱他美')),
             array('name'=>'美容护肤 ',"imgurl"=>"images/index_fs_",'detalist'=>'德国彩妆 essence 三色修容腮红 粉质细腻 14g',),
@@ -31,9 +31,9 @@ for($x=0;$x<$arrlen;$x++){
              "imgurl" =>$arr_muyi[$x]['imgurl'].$i,
              "price" => '99.00',
             );
-           
         //写入数组
     };
+
     array_push($arr_all,$arr);
 
 };

@@ -85,15 +85,15 @@
         var $cont = $("#container")
         xhr.onload =function(){
             //获取后台数据
-            var res = JSON.parse(xhr.responseText);
+            var res = JSON.parse(xhr.responseText)
             console.log(res);
             //生成页面
             
-            html = res.data.map(function(item){
+            html = res.data.map(function(item,idx){
                 var li = item.map(function(val,idx){
-                    
+
                     return`<li>
-                            <a href="#"><img src=${val.imgurl}".jpg" height="180" width="180" alt="" /></a>
+                            <a href="#"><img src="${val.imgurl}.jpg" height="180" width="180" alt="" /></a>
                             <p><a href="#">${val.detalist}</a></p>
                             <div><span class='price'>¥${val.price}</span><span class='oldprice'>¥${val.price-30}</span></div>
                             </li>`
@@ -104,7 +104,7 @@
                         <i><img src="images/floor-T.jpg" alt="" /></i>
                         <span>${item[0].name}</span></h3>
                         <div class="datalist_l fl">
-                        <img src="images/20170614114154_3317.jpg" height="600" width="220" alt="" />
+                        <img src="images/bigimgs${idx-1}.png" height="600" width="220" alt="" />
                         </div>
                         <ul class='fl clearfix'>
                             ${li}
@@ -165,8 +165,8 @@
                         </div>
                         </div>`
             }).slice(2,6).join("");
-            console.log(html)
-            console.log($cont)
+            //console.log(html)
+            //console.log($cont)
             $(html).appendTo($cont);
         }
         xhr.open('get','http://localhost:39/src/api/index.php',true);
