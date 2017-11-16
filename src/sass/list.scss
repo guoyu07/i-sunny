@@ -1,0 +1,53 @@
+@import 'base.scss';
+#header_sunny{
+    .header_b{
+        h3{
+
+            &>dl{
+                display: none;
+            }
+        }
+    }
+}
+#cont{
+    .container{
+        width: 1200px;
+        .cont_l{
+            width: 208px;
+            dl{
+                width: 208px;
+                height: 113px;
+                border: 1px solid #ddd;
+
+                dt{
+                    width: 208px;
+                    height: 31px;
+                    line-height: 31px;
+                    padding-left: 15px;
+                    color: #686868;
+                    border:1px solid #DDD; 
+                    border-right: 0 none;
+                    border-left: 0 none;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+                dd{
+                    float: left;
+                    width: 81px;
+                    text-align: center; 
+                    padding: 4px 0;
+                }
+            }
+        }
+        .cont_r{
+            width: 980px;
+            .cont_r_t{
+                padding: 0 10px;
+                border: 1px solid #ccc;
+                h3{
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
