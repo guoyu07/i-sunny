@@ -46,8 +46,34 @@
                 border: 1px solid #ccc;
                 h3{
                     line-height: 30px;
+                    font-weight: bold;
+                    border-bottom: 1px solid #ccc;
+                }
+                ul{
+                    padding: 15px 0;
+                    li{
+                        float: left;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .cont_r_b{
+                padding: 0 10px;
+                border: 1px solid #ccc;
+                h3{
+                    line-height: 30px;
+                    font-weight: bold;
+                    border-bottom: 1px solid #ccc;
+                }
+                dl{
+                    padding: 15px 0;
+                    dt{
+                        float: left;
+                        margin-right: 10px;
+                    }
                 }
             }
         }
+
     }
 }
