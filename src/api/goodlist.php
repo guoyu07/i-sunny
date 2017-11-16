@@ -27,7 +27,6 @@ for($x=0;$x<$arrlen;$x++){
              "category" =>'母婴专区',
              "detalist" => $arr_muyi[$x]['detalist'],
              "imgurl" =>$arr_muyi[$x]['imgurl'].$i,
-             "brand" =>'日本大王(GOO.N) ',
              "price" => '99.00',
             );
            

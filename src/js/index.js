@@ -80,8 +80,97 @@
             //执行动画
         },4000)
         /*------轮播------*/
-        /*------mouse_event------*/
-        
+        /*------传参------*/
+        var xhr = new XMLHttpRequest();
+        var $cont = $("#container")
+        xhr.onload =function(){
+            //获取后台数据
+            var res = JSON.parse(xhr.responseText);
+            console.log(res);
+            //生成页面
+            
+            html = res.data.map(function(item){
+                var li = item.map(function(val,idx){
+                    
+                    return`<li>
+                            <a href="#"><img src=${val.imgurl}".jpg" height="180" width="180" alt="" /></a>
+                            <p><a href="#">${val.detalist}</a></p>
+                            <div><span class='price'>¥${val.price}</span><span class='oldprice'>¥${val.price-30}</span></div>
+                            </li>`
+
+                }).slice(0,6).join("");
+                return `<div class="datalist clearfix">
+                        <h3>
+                        <i><img src="images/floor-T.jpg" alt="" /></i>
+                        <span>${item[0].name}</span></h3>
+                        <div class="datalist_l fl">
+                        <img src="images/20170614114154_3317.jpg" height="600" width="220" alt="" />
+                        </div>
+                        <ul class='fl clearfix'>
+                            ${li}
+                        </ul>
+                        <div class="datalist_r fr">
+                                <h4>销量排行榜</h4>
+                                <ul>
+                                    <li>
+                                        <em>1</em>
+                                        <img src="images/60_201706061342371184160.png" alt="" />
+                                        <div class='data_p'>
+                                            <p>德国奶粉 喜宝 Hipp 有机Pre段 600g</p>
+                                            <span>已售<span></span>件</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                         <em>2</em>
+                                        <img src="images/60_201706061342371184160.png" alt="" />
+                                        <div class='data_p'>
+                                            <p>德国奶粉 喜宝 Hipp 有机Pre段 600g</p>
+                                            <span>已售<span></span>件</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                         <em>3</em>
+                                        <img src="images/60_201706061342371184160.png" alt="" />
+                                        <div class='data_p'>
+                                            <p>德国奶粉 喜宝 Hipp 有机Pre段 600g</p>
+                                            <span>已售<span></span>件</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                         <em>4</em>
+                                        <div class='data_p'>
+                                            <p>德国奶粉 喜宝 Hipp 有机Pre段 600g</p>
+                                            <span>已售<span></span>件</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                         <em>5</em>
+                                        <div class='data_p'>
+                                            <p>德国奶粉 喜宝 Hipp 有机Pre段 600g</p>
+                                            <span>已售<span></span>件</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                         <em>6</em>
+                                        <div class='data_p'>
+                                            <p>德国奶粉 喜宝 Hipp 有机Pre段 600g</p>
+                                            <span>已售<span></span>件</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="brand">
+                                <img src="images/20170613105424_6564.png" alt="" />
+                            </div>
+                        </div>
+                        </div>`
+            }).slice(2,6).join("");
+            console.log(html)
+            console.log($cont)
+            $(html).appendTo($cont);
+        }
+        xhr.open('get','http://localhost:39/src/api/index.php',true);
+        xhr.send();
         
         })
      })

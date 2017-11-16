@@ -676,21 +676,21 @@ body {
   background: url("../images/cout_bg_11.jpg") no-repeat;
 }
 
-#container #datalist h3 {
+#container .datalist h3 {
   width: 220px;
   font-size: 18px;
   padding-bottom: 20px;
 }
 
-#container #datalist h3 span {
+#container .datalist h3 span {
   padding-left: 20px;
 }
 
-#container #datalist > ul {
+#container .datalist > ul {
   width: 720px;
 }
 
-#container #datalist > ul > li {
+#container .datalist > ul > li {
   width: 220px;
   height: 290px;
   padding: 20px;
@@ -700,11 +700,11 @@ body {
   float: left;
 }
 
-#container #datalist > ul > li:nth-child(4), #container #datalist > ul > li:nth-child(5), #container #datalist > ul > li:nth-child(6) {
+#container .datalist > ul > li:nth-child(4), #container .datalist > ul > li:nth-child(5), #container .datalist > ul > li:nth-child(6) {
   margin-top: 20px;
 }
 
-#container #datalist > ul > li p {
+#container .datalist > ul > li p {
   width: 200px;
   overflow: hidden;
   white-space: nowrap;
@@ -712,39 +712,39 @@ body {
   line-height: 40px;
 }
 
-#container #datalist > ul > li p a {
+#container .datalist > ul > li p a {
   color: #333;
 }
 
-#container #datalist > ul > li span {
+#container .datalist > ul > li span {
   line-height: 40px;
 }
 
-#container #datalist > ul > li span:nth-of-type(1) {
+#container .datalist > ul > li span:nth-of-type(1) {
   font-size: 16px;
   color: #ff5722;
 }
 
-#container #datalist > ul > li span:nth-of-type(2) {
+#container .datalist > ul > li span:nth-of-type(2) {
   font-size: 10px;
   color: #B5B5B5;
   text-decoration: line-through;
 }
 
-#container #datalist .datalist_r {
+#container .datalist .datalist_r {
   width: 220px;
   height: 600px;
   background: #fff;
 }
 
-#container #datalist .datalist_r h4 {
+#container .datalist .datalist_r h4 {
   color: #FF5252;
   font-size: 18px;
   line-height: 40px;
   padding-left: 20px;
 }
 
-#container #datalist .datalist_r ul li {
+#container .datalist .datalist_r ul li {
   height: 101px;
   padding-top: 20px;
   padding-bottom: 25px;
@@ -752,23 +752,23 @@ body {
   border-bottom: 1px solid #F9F9F9;
 }
 
-#container #datalist .datalist_r ul li:nth-child(4), #container #datalist .datalist_r ul li:nth-child(5), #container #datalist .datalist_r ul li:nth-child(6) {
+#container .datalist .datalist_r ul li:nth-child(4), #container .datalist .datalist_r ul li:nth-child(5), #container .datalist .datalist_r ul li:nth-child(6) {
   height: 81px;
 }
 
-#container #datalist .datalist_r ul li:nth-child(4) em, #container #datalist .datalist_r ul li:nth-child(5) em, #container #datalist .datalist_r ul li:nth-child(6) em {
+#container .datalist .datalist_r ul li:nth-child(4) em, #container .datalist .datalist_r ul li:nth-child(5) em, #container .datalist .datalist_r ul li:nth-child(6) em {
   background: #DDDDDD;
 }
 
-#container #datalist .datalist_r ul li:nth-child(4) img, #container #datalist .datalist_r ul li:nth-child(5) img, #container #datalist .datalist_r ul li:nth-child(6) img {
+#container .datalist .datalist_r ul li:nth-child(4) img, #container .datalist .datalist_r ul li:nth-child(5) img, #container .datalist .datalist_r ul li:nth-child(6) img {
   display: none;
 }
 
-#container #datalist .datalist_r ul li:nth-child(4) .data_p, #container #datalist .datalist_r ul li:nth-child(5) .data_p, #container #datalist .datalist_r ul li:nth-child(6) .data_p {
+#container .datalist .datalist_r ul li:nth-child(4) .data_p, #container .datalist .datalist_r ul li:nth-child(5) .data_p, #container .datalist .datalist_r ul li:nth-child(6) .data_p {
   height: 20px;
 }
 
-#container #datalist .datalist_r ul li:nth-child(4) .data_p p, #container #datalist .datalist_r ul li:nth-child(5) .data_p p, #container #datalist .datalist_r ul li:nth-child(6) .data_p p {
+#container .datalist .datalist_r ul li:nth-child(4) .data_p p, #container .datalist .datalist_r ul li:nth-child(5) .data_p p, #container .datalist .datalist_r ul li:nth-child(6) .data_p p {
   width: 132px;
   overflow: hidden;
   white-space: nowrap;
@@ -776,7 +776,7 @@ body {
   height: 20px;
 }
 
-#container #datalist .datalist_r ul li em {
+#container .datalist .datalist_r ul li em {
   width: 18px;
   height: 18px;
   display: inline-block;
@@ -785,18 +785,18 @@ body {
   text-align: center;
 }
 
-#container #datalist .datalist_r ul li img {
+#container .datalist .datalist_r ul li img {
   border: 1px solid #ccc;
   margin: 0 10px;
   padding-left: 1px;
 }
 
-#container #datalist .datalist_r ul li .data_p {
+#container .datalist .datalist_r ul li .data_p {
   display: inline-block;
   vertical-align: middle;
 }
 
-#container #datalist .datalist_r ul li .data_p p {
+#container .datalist .datalist_r ul li .data_p p {
   width: 80px;
   height: 43px;
   line-height: 20px;
@@ -804,11 +804,11 @@ body {
   padding-left: 10px;
 }
 
-#container #datalist .datalist_r ul li .data_p p a {
+#container .datalist .datalist_r ul li .data_p p a {
   color: #333;
 }
 
-#container #datalist .brand {
+#container .datalist .brand {
   float: left;
   margin: 20px 0;
 }
