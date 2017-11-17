@@ -1,0 +1,167 @@
+@import 'base.scss';
+
+
+#header_sunny .header_b h3 > dl{
+    display: none;
+}
+#cont{
+    .container{
+        h3{
+            line-height: 38px;
+        }
+        .cont_l{
+            .bigimg{
+                width: 412px;
+                height: 412px;
+                line-height: 42px;
+                img{
+                    width: 412px;
+                    height: 412px;
+                    border: 1px solid #ddd;
+                }
+            }
+            h2{
+                display: inline-block;
+            }
+            ul{
+                display: inline-block;
+            }
+            p{
+                display: inline-block;
+            }
+
+        }
+        .cont_m{
+            margin-left: 20px;
+            padding-right: 20px;
+            border-right: 1px solid #ccc;
+            h3{
+                font-size: 16px;
+                line-height: 35px;
+
+            }
+            width: 518px; 
+            .price{
+                width: 500px;
+                height: 100px;
+                background: #DDD;
+                padding: 15px;
+                p{
+                    line-height: 30px;
+                    s{
+                            text-decoration: line-through;
+                    }
+                    &>span{
+                        color: #FE5722;
+                        &.big{
+                            font-size: 24px;
+                     
+                        }
+                    }
+
+                
+                }
+            }
+            .ad{
+                height: 50px;
+                line-height: 50px;
+
+            }
+            .len{
+                width: 511px;
+                border-top: 1px dashed #ccc;
+                border-bottom: 1px dashed #ccc;
+                line-height: 40px;
+                span{
+                    width: 50%;
+                    display: block;
+                    float: left;
+                    text-align: center;
+                    border-right: 1px solid #ccc;
+                    &:nth-last-child(1){
+                        border-right:0 none;
+                    }
+                }
+            }
+            .pack{
+                height: 40px;
+                line-height: 80px;
+                input{
+                    height: 39px;
+                    width: 49px;
+                    border:1px solid #FE5722;
+                    background: #fff;
+                }
+            }
+            
+            .length{
+                height: 100px;
+                line-height: 100px;
+                label{
+                    float: left;
+                }
+                .length_b{
+                    width: 100px;
+                    height: 43px;
+                    display: inline-block;
+                    vertical-align:middle;
+                    input{
+                        width: 79px;
+                        height: 43px;
+                        border: 1px solid #ccc;
+                        float: left;
+                        text-align: center;
+                    }
+                    span{
+                        width: 20px;
+                        height: 22px;
+                        float: right;
+                        border: 1px solid #ccc;
+                        line-height: 20px;
+                        text-align: center;
+
+                    }
+                }
+
+            }
+            .btn{
+                   button{
+                    width: 201px;
+                    height: 42px;
+                    line-height: 42px;
+                     background: #FF5722;
+                     color: #fff;
+                    float: left;
+                    &:nth-child(1){
+                        background: #FFF;
+                        color: #FF5722;
+                        border: 1px solid #FF5722;
+                        margin-right: 10px;
+                    }
+                   }
+                }
+        }
+        .cont_r{
+            width: 207px;
+        }
+        .cont_b{
+            .container{
+                .cont_b_l{
+                    width: 213px;
+                }
+                .cont_b_r{
+                    width: 989px;
+                    ul{
+                        li{
+                            width: 132px;
+                            float: left;
+                            span{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

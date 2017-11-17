@@ -92,7 +92,7 @@
             html = res.data.map(function(item,idx){
                 var li = item.map(function(val,idx){
 
-                    return`<li>
+                    return`<li data-id ='${val.id}'>
                             <a href="#"><img src="${val.imgurl}.jpg" height="180" width="180" alt="" /></a>
                             <p><a href="#">${val.detalist}</a></p>
                             <div><span class='price'>¥${val.price}</span><span class='oldprice'>¥${val.price-30}</span></div>
@@ -171,7 +171,17 @@
         }
         xhr.open('get','http://localhost:39/src/api/index.php',true);
         xhr.send();
-        
+        /*-----ajax----*/
+
+            /*-----点击跳转页面#list---*/
+            $('#nav').on('a',function(){
+               location.href = 'html/list.html';
+               
+            })
+            /*-----点击跳转页面#goods---*/
+            $('#container').on('a',function(){
+               location.href = 'html/goods.html';
+            })
         })
      })
  })

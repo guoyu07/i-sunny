@@ -1,6 +1,6 @@
 <?php
 
-
+ 
     $f_url = './data/index.json';
     //获取JSON文件
     $myfile = fopen($f_url,'r');

@@ -17,15 +17,17 @@ $arr_all = array();
 
 //根据判断进行while循环
 $arrlen = count($arr_muyi);
+$j = 0; 
 for($x=0;$x<$arrlen;$x++){
     $i=0;
     $arr= array();
     while($i<=10){
         //递增
         $i++;
+        $j++;
         //创建对象
         $arr[]= array(
-             "id "=> $i,
+             "id "=> $j,
              "name" =>$arr_muyi[$x]['name'],
              "detalist" => $arr_muyi[$x]['detalist'],
              "imgurl" =>$arr_muyi[$x]['imgurl'].$i,
