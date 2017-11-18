@@ -1,0 +1,178 @@
+@import 'base.scss';
+ #header_sunny .header_b{
+        display: none;
+    }
+#header_sunny .header_m {
+    display: none;
+}
+header{
+    height:118px;
+    padding-top: 35px;
+    .container{
+        .logo{
+            text-indent:-1000px;
+            background: url('../images/logo.gif');
+            display: block;
+            width:200px;
+            height:63px;
+            float: left;
+            margin-right: 15px;
+        }
+        h2{
+            color: #585858;
+            float: left;
+            font-size: 24px;
+            line-height: 63px;
+            border-left: 1px solid #ccc;
+            padding-left: 15px;
+        }
+        ul{
+            float: right;
+            li{
+                float: left;
+                width:165px;
+                a{
+                    .active{
+                         color: #FF5719;
+                    }
+                }
+                
+            }
+
+        }
+      }
+
+}
+.cont{
+    .handle{
+        height:44px;
+        background-color: #F1F1F1;
+        padding:0 10px;
+
+        ul{
+            li{
+                width:(1160px / 5);
+                float: left;
+                line-height: 44px;
+            }
+        }
+    }
+                
+                
+    .terrace{
+        height: 56px;
+        line-height: 56px;
+    }
+    
+    #carlist{
+
+      
+       border: 1px solid #ccc;
+       border-top: 3px solid #FFD1C0; 
+       margin-bottom: 90px;   
+            ul{
+                padding: 20px 0;
+                border-top: 1px solid #ccc;
+                &:nth-child(1){
+                    border-top: 0 none;
+                }
+                li{
+                    width: 210px;
+                    float: left;
+                    text-align: center;
+                    img{
+                        width: 80px;
+                        height: 80px;
+                        border: 1px solid #ccc;
+                        margin-left: 10px;
+                    }
+                    :nth-child(1){
+                        text-align:right;
+                    }
+                    #zt{
+                      background: #FFE8E0;
+                        width: 94px;
+                        height: 24px;
+                        span{
+                            color: #FF561B;
+                            line-height: 24px;
+                            height: 24px;
+                            display: block;
+                            background: url('../images/ziti_03.jpg') no-repeat;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+                .length{
+                    span{
+                        width: 22px;
+                        height: 22px;
+                        line-height: 22px;
+                        float: left;
+                        border: 1px solid #ccc;
+                        text-align: center;
+                        cursor:pointer;
+                    }
+                    input{
+                        width: 55px;
+                        height: 22px;
+                        text-align: center;
+                        float: left;
+                        border-top: 1px solid #ccc;
+                        border-bottom: 1px solid #ccc;
+                    }
+                }
+
+        }
+
+    }
+    .line{
+    background: #E0E0E0;
+    height: 4px;
+    margin-bottom: 20px;
+
+    }
+    .delete{
+        width: 1180px;
+        height: 53px;
+        border: 1px solid #DCDCDC;
+        margin-bottom: 30px;
+        background: #FAFAFA;
+        ul{
+            padding: 0 20px;
+            line-height: 53px;
+            li{
+                margin-right: 10px;
+                &:nth-child(1){
+                    width: 700px;
+                    margin-right: 0;
+                }
+                float: left;
+                span,h3{
+                    display: inline-block;
+                    line-height: 53px;
+                    vertical-align:middle;
+                }
+                h3{
+                    font-size: 24px;
+                    line-height: 53px;
+                    font-weight: bold;
+                    color: #E70012;
+                }
+            }
+        }
+        button{
+            width: 120px;
+            height: 53px;
+            background:#FF561A;
+            color: #fff;
+            float: right;
+        }
+    }
+}
+#footer{
+    background: #F5F5F5;
+     .container .link{
+        display:none;
+    }
+}

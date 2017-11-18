@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>阳光海淘</title>
+    <link rel="stylesheet" type="text/css" href="../css/car.css" />
+</head>
+<body>
+     <div id="pageheader"></div>
+     <header>
+        <div class="container clearfix">
+            <h1 class="logo"></h1>
+            <ul>
+                <li><a href="#" class='active'>1.我的购物车</a></li>
+                <li><a href="#">2.填写核对订单信息</a></li>
+                <li><a href="#">3.成功提交订单</a></li>
+            </ul>
+        </div>
+    </header>
+     <div class="cont">
+        <div class="container">
+            <div class="handle">
+                <ul>
+                    <li><input type="checkbox" id="all"/><label for="all">全选</label></li>
+                    <li><span>商品</span></li>
+                    <li><span>单价（元）</span></li>
+                    <li><span>数量</span></li>
+                    <li><span>操作</span></li>
+                </ul>
+            </div>
+            <div class="terrace">
+                <input type="checkbox" id='terrace'/><label for="terrace">平台</label>
+            </div>
+            <div id="carlist">
+            </div>
+            <div class="line"></div>
+            <div class="delete clearfix">
+                <ul class="cont fl clearfix">
+                    <li><a href="#">删除所选商品</a></li>
+                    <li><span>以选择件商品</span></li>
+                    <li><span>合计（不含运费）：</span><h3 id='total'></h3></li>
+                </ul>
+                <button>去结算</button>
+            </div>
+         </div>
+     </div>
+     <div id="pagefooter"></div>
+     <script src="../js/require.js" data-main='../js/car'></script>
+
+</body>
+
+</html>

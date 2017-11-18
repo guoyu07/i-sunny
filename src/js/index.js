@@ -3,14 +3,23 @@
 
     jQuery(function($){
         /*----连接footer和header-----*/
+        /*-------写在回调函数里为了调用-------*/
         $('#pageheader').load('html/header.html',function(){
 
             $('.header_b').on('mouseenter','dd',function(e){
                 $(this).find('.shopcont').css({'display':'block'})
-                console.log($(this).find('.shopcont'));
+                //console.log($(this).find('.shopcont'));
             });
             $('.header_b').on('mouseleave','dd',function(e){
                 $(this).find('.shopcont').css({'display':'none'})
+            })
+            $('#nav').on('click','a',function(e){
+               //console.log(666)
+            /*-----点击跳转页面#list---*/
+                if($(this)[0].innerText ==='首页'){
+                    $(this)[0].href= '#';
+                }
+                location.href= 'html/list.html';
             })
         });
 
@@ -66,7 +75,7 @@
                 $span[i].classList.remove('active');
                 if(i==index){
                     $span[index].classList.add('active')
-                    console.log($span[index],$span)
+                    //console.log($span[index],$span)
                 }
                 
             };
@@ -82,6 +91,7 @@
         /*------轮播------*/
         /*------传参------*/
         var xhr = new XMLHttpRequest();
+        //请求数据
         var $cont = $("#container")
         xhr.onload =function(){
             //获取后台数据
@@ -90,8 +100,8 @@
             //生成页面
             
             html = res.data.map(function(item,idx){
-                var li = item.map(function(val,idx){
-
+                var li = item.map(function(val){
+                    //console.log(val)
                     return`<li data-id ='${val.id}'>
                             <a href="#"><img src="${val.imgurl}.jpg" height="180" width="180" alt="" /></a>
                             <p><a href="#">${val.detalist}</a></p>
@@ -173,14 +183,13 @@
         xhr.send();
         /*-----ajax----*/
 
-            /*-----点击跳转页面#list---*/
-            $('#nav').on('a',function(){
-               location.href = 'html/list.html';
-               
-            })
+
             /*-----点击跳转页面#goods---*/
-            $('#container').on('a',function(){
-               location.href = 'html/goods.html';
+            $('#container').on('click','a',function(e){
+                var target = e.target;
+                var id = target.parentNode.parentNode.getAttribute('data-id');
+                //console.log(id)
+               location.href = 'html/goods.html?id='+id;
             })
         })
      })

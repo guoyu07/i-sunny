@@ -514,6 +514,11 @@ body {
   margin-right: 20px;
 }
 
+#container #banner_b ul li img {
+  width: 280px;
+  height: 180px;
+}
+
 #container #banner_b ul li:nth-last-child(1) {
   margin-right: 0px;
 }

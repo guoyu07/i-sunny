@@ -27,7 +27,7 @@ for($x=0;$x<$arrlen;$x++){
         $j++;
         //创建对象
         $arr[]= array(
-             "id "=> $j,
+             "id"=> $j,
              "name" =>$arr_muyi[$x]['name'],
              "detalist" => $arr_muyi[$x]['detalist'],
              "imgurl" =>$arr_muyi[$x]['imgurl'].$i,

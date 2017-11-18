@@ -1,29 +1,29 @@
-@import 'base.scss';
+    @import 'base.scss';
 
-header{
-    height:118px;
-    padding-top: 35px;
-    .container{
-        .logo{
-        text-indent:-1000px;
-        background: url('../images/logo.gif');
-        display: block;
-        width:200px;
-        height:63px;
-        float: left;
-        margin-right: 15px;
-        }
-        h2{
-            color: #585858;
+    header{
+        height:118px;
+        padding-top: 35px;
+        .container{
+            .logo{
+            text-indent:-1000px;
+            background: url('../images/logo.gif');
+            display: block;
+            width:200px;
+            height:63px;
             float: left;
-            font-size: 24px;
-            line-height: 63px;
-            border-left: 1px solid #ccc;
-            padding-left: 15px;
-        }
+            margin-right: 15px;
+            }
+            h2{
+                color: #585858;
+                float: left;
+                font-size: 24px;
+                line-height: 63px;
+                border-left: 1px solid #ccc;
+                padding-left: 15px;
+            }
 
-      }
-}
+          }
+    }
 #login_cont{
     background: #FE3F3F;
     .container{
