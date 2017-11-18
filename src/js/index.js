@@ -16,10 +16,15 @@
             $('#nav').on('click','a',function(e){
                //console.log(666)
             /*-----点击跳转页面#list---*/
+                console.log($(this)[0]);
                 if($(this)[0].innerText ==='首页'){
                     $(this)[0].href= '#';
+                }else{
+                    //除首页外跳转list.html
+                    var cary = $(this)[0].innerText;
+                    location.href= 'html/list.html?category='+cary;
+
                 }
-                location.href= 'html/list.html';
             })
         });
 
