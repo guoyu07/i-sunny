@@ -10,14 +10,38 @@
             line-height: 38px;
         }
         .cont_l{
+            position:relative;
             .bigimg{
                 width: 412px;
                 height: 412px;
                 line-height: 42px;
+                position:relative;
+                .move{
+                    background: rgba(0,0,0,0.5);
+                    width: 200px;
+                    height: 200px;
+                    position:absolute;
+                    display: none;
+                }
                 img{
                     width: 412px;
                     height: 412px;
                     border: 1px solid #ddd;
+                }
+            }
+            .bbigimg{
+                width: 412px;
+                height: 412px;
+                border: 1px solid #ccc;
+                position:absolute;
+                overflow: hidden;
+                top: 0;
+                left: 412px;
+                display: none;
+                img{
+                    width: 800px;
+                    height: 800px;
+                    position:absolute;
                 }
             }
             h2{
@@ -145,6 +169,7 @@
             width: 207px;
         }
         .cont_b{
+            margin-top: 43px;
             .container{
                 .cont_b_l{
                     width: 213px;
@@ -152,11 +177,17 @@
                 .cont_b_r{
                     width: 989px;
                     ul{
+                            border: 1px solid #ccc;
+                            margin-bottom: 40px;
                         li{
-                            width: 132px;
                             float: left;
+                            text-align: center;
+                            height: 43px;
+                            padding-top: 12px;
                             span{
-                                text-align: center;
+                                width: 132px;
+                                display: block;
+                                border-right: 1px solid #ccc;
                             }
                         }
                     }

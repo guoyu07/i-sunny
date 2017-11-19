@@ -418,16 +418,46 @@ s, i, em {
   line-height: 38px;
 }
 
+#cont .container .cont_l {
+  position: relative;
+}
+
 #cont .container .cont_l .bigimg {
   width: 412px;
   height: 412px;
   line-height: 42px;
+  position: relative;
+}
+
+#cont .container .cont_l .bigimg .move {
+  background: rgba(0, 0, 0, 0.5);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  display: none;
 }
 
 #cont .container .cont_l .bigimg img {
   width: 412px;
   height: 412px;
   border: 1px solid #ddd;
+}
+
+#cont .container .cont_l .bbigimg {
+  width: 412px;
+  height: 412px;
+  border: 1px solid #ccc;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 412px;
+  display: none;
+}
+
+#cont .container .cont_l .bbigimg img {
+  width: 800px;
+  height: 800px;
+  position: absolute;
 }
 
 #cont .container .cont_l h2 {
@@ -566,6 +596,10 @@ s, i, em {
   width: 207px;
 }
 
+#cont .container .cont_b {
+  margin-top: 43px;
+}
+
 #cont .container .cont_b .container .cont_b_l {
   width: 213px;
 }
@@ -574,11 +608,20 @@ s, i, em {
   width: 989px;
 }
 
+#cont .container .cont_b .container .cont_b_r ul {
+  border: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+
 #cont .container .cont_b .container .cont_b_r ul li {
-  width: 132px;
   float: left;
+  text-align: center;
+  height: 43px;
+  padding-top: 12px;
 }
 
 #cont .container .cont_b .container .cont_b_r ul li span {
-  text-align: center;
+  width: 132px;
+  display: block;
+  border-right: 1px solid #ccc;
 }
