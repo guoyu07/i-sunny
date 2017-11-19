@@ -596,7 +596,7 @@ header p span a {
   color: #268bf3;
 }
 
-.Register .form-cont button#submit {
+.Register .form-cont #submit {
   width: 300px;
   height: 40px;
   background-color: #FE5722;
@@ -604,4 +604,6 @@ header p span a {
   font-size: 18px;
   margin-left: 80px;
   cursor: pointer;
+  text-align: center;
+  line-height: 40px;
 }

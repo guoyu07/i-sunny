@@ -103,14 +103,48 @@
             var res = JSON.parse(xhr.responseText)
             console.log(res);
             //生成页面
-            
+            var list_xg = `<h3>每日上新</h3><ul class='clearfix'>`;
+            var list_qg
             html = res.data.map(function(item,idx){
+
+                    //每日上新
+                    if(item[0].name==='每日上新 '){
+                      list_xg += item.map(function(val){
+                        return `<li data-id ='${val.id}'>
+                                <a href="#">
+                                 <img src="${val.imgurl}.jpg" height="220" width="220" alt="" />
+                                 </a>
+                                    <p><a href="#">¥${val.detalist}</a></p>
+                                    <div><span class='price'>¥${val.price}</span><span class='oldprice'>¥${val.price}</span></div>
+                                            
+                                </li>`
+
+                        }).slice(0,5).join("");
+
+                    }
+                    //限时抢购
+                    if(item[0].name==='限时抢购'){
+                      list_qg = item.map(function(val){
+                        return `<li data-id ='${val.id}'>
+                                    <a>
+                                    <img src="${val.imgurl}.jpg" height="220" width="220" alt="" />
+                                    </a>
+                                    <p><a href="#">${val.detalist}</a></p>
+                                    <div><span class='price'>¥${val.price}</span><span class='oldprice'>¥${val.price}</span></div>
+                                    <div class="time">
+                                        <p><span></span>天<span></span>时<span></span>分<span></span>秒</p>
+                                    </div>
+                                </li>`
+
+                        }).slice(0,4).join("");
+
+                    }
                 var li = item.map(function(val){
                     //console.log(val)
                     return`<li data-id ='${val.id}'>
                             <a href="#"><img src="${val.imgurl}.jpg" height="180" width="180" alt="" /></a>
                             <p><a href="#">${val.detalist}</a></p>
-                            <div><span class='price'>¥${val.price}</span><span class='oldprice'>¥${val.price-30}</span></div>
+                            <div><span class='price'>¥${val.price}</span><span class='oldprice'>¥${val.price}</span></div>
                             </li>`
 
                 }).slice(0,6).join("");
@@ -182,6 +216,9 @@
             }).slice(2,6).join("");
             //console.log(html)
             //console.log($cont)
+            list_xg+=`<ul>`
+            $('#rush').find('ul').html(list_qg)
+            $('#nowshop').html(list_xg);
             $(html).appendTo($cont);
         }
         xhr.open('get','http://localhost:39/src/api/index.php',true);

@@ -53,7 +53,7 @@ require(['config'],function(){
                     }
                     //姓名
                     if(target.id === 'name'){
-                        var res = target.value;
+                        var res_name = target.value;
                         if(!/^[\u4e00-\u9fa5A-Za-z]{2,20}$/.test(res) ){
                             target.parentNode.children[2].innerHTML='<i><img src="../images/zcselect.jpg" alt="" /></i>请输入正确的姓名';
                             target.parentNode.children[2].className='error';
@@ -70,9 +70,30 @@ require(['config'],function(){
                         //移除高亮
                 })
                 //提交注册事件
-            //     $('#submit').on('click',function(){
+                $('#submit').on('click',function(){
+                    var _username = $('#name')[0].value;
+                    var _password = $('#password')[0].value;
+                    var _email = $('#emali')[0].value;
+                    //创建一个异步请求对象
+                    var xhr = new XMLHttpRequest();
 
-            // })
+                    xhr.onload = function(){
+
+                        var res = xhr.responseText;
+                        //console.log(res);
+                        if(res==='fail'){
+                            alert('邮箱已注册')
+                        }else{
+                            alert('注册成功')
+                        }
+                    }
+
+                    xhr.open('get','http://localhost:39/src/api/reg.php?username=' + _username +
+    
+                        '&password='+ _password +'&email='+ _email,true);
+                    xhr.send();
+                   
+                })
         })
     })
 })

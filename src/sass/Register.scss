@@ -84,14 +84,16 @@ header {
             }
             
         }
-        button#submit{
+        #submit{
                 width: 300px;
                 height: 40px;
                 background-color: #FE5722;
                 color: #fff;
                 font-size: 18px;
                 margin-left: 80px;  
-                cursor:pointer;              
+                cursor:pointer;    
+                text-align: center;
+                line-height: 40px;          
         }
     }
         
