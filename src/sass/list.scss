@@ -12,12 +12,16 @@
 #cont{
     .container{
         width: 1200px;
+        h3{
+            line-height: 30px;
+        }
         .cont_l{
             width: 208px;
             dl{
                 width: 208px;
                 height: 113px;
                 border: 1px solid #ddd;
+                border-top: 1px solid #FE5722;
 
                 dt{
                     width: 208px;
@@ -58,6 +62,7 @@
                 }
             }
             .cont_r_b{
+                margin-top: 20px;
                 padding: 0 10px;
                 border: 1px solid #ccc;
                 h3{
